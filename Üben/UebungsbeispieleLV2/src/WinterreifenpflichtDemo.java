@@ -13,4 +13,5 @@ public class WinterreifenpflichtDemo {
             System.out.println("Winterreifen sind nicht erforderlich");
             return keineWinterreifenplicht;}
     }
+
 }
