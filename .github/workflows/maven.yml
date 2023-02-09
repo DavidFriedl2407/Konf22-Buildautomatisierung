@@ -6,7 +6,8 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: My first Workflow with github actions
+name: Java CI with Maven
+
 on:
   push:
     branches: [ "master" ]
@@ -14,7 +15,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  test:
+  build:
 
     runs-on: ubuntu-latest
 
@@ -28,5 +29,3 @@ jobs:
         cache: maven
     - name: Test with Maven
       run: mvn -B test --file pom.xml
-
-  
